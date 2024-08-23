@@ -1,6 +1,6 @@
-Refer to DLPFC_data_analysis.md for step-by-step analysis code based on the step 1 and step 2 results from the cSVG algorithm. 
+Refer to DLPFC_data_analysis.md for step-by-step analysis code based on the step 1 and step 2 results from the SPACE algorithm. 
 
-For larger datasets, the first two steps of cSVG are typically performed using a high-performance computing cluster by breaking the data into smaller gene chunks. This makes the code runs faster and smoother. Here is the description of the process: 
+For larger datasets, the first two steps of SPACE are typically performed using a high-performance computing cluster by breaking the data into smaller gene chunks. This makes the code runs faster and smoother. Here is the description of the process: 
 
 Step 1: run code code_Step1.R using the .sb file step1.sb.
 Based on how small the gene chunks(10 genes in the example code) are and the total no of genes in the dataset, the number N_ARRAY is decided. N_ARRAY=ceiling(total no of genes in dataset/chunk size). In this example of sample 6, N_ARRAY=ceiling(4865/10)=487. 

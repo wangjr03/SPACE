@@ -10,6 +10,15 @@ Please find below a schematic diagram which shows the steps of SPACE for spatial
 
 The main function to implement SPACE can be utilized as follow:
 
+``` r
+fn_cSVG_par(data_mat,
+            loc_mat,
+            method_step1="MargcorTest",
+            thres_step1="standard",
+            control=FALSE,
+            ncores=7)
+```
+
 
 
 

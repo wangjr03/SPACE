@@ -25,7 +25,7 @@ data_mat: normalized gene expression matrix with rows as genes and columns as sp
 
 loc_mat: matrix containing the spatial locations of the spots in data_mat. spatial locations are typically represented as two-dimensional coordinates, so loc_mat is typically a Nx2 matrix. 
 
-method_step1: 
+method_step1: method to select related genes. The default method is "MargcorTest" or marginal correlation test. The other available options are "SIS" or sure independence screening, "rrcs", "Enet" or Elastic net, "SIS+Enet".  See https://github.com/wwrechard/screening for more information about "SIS" or "rrcs" methods.
 
 
 

@@ -5,3 +5,11 @@ Please find below a schematic diagram which shows the steps of SPACE for spatial
 
 
 <img width="1189" alt="Github_README" src="https://github.com/wangjr03/SPACE/assets/73495177/1dfe3d5d-996f-498d-9f45-ded17fd486c5">
+
+## Input data
+
+The main function to implement SPACE can be utilized as follow:
+
+
+
+

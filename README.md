@@ -19,6 +19,14 @@ fn_cSVG_par(data_mat,
             ncores=7)
 ```
 
+Arguments:
+
+data_mat: normalized gene expression matrix with rows as genes and columns as spots. data_mat should be a mxN matrix where m is the number of genes and N is the number of spots.
+
+loc_mat: matrix containing the spatial locations of the spots in data_mat. spatial locations are typically represented as two-dimensional coordinates, so loc_mat is typically a Nx2 matrix. 
+
+method_step1: 
+
 
 
 

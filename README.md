@@ -40,23 +40,30 @@ fn_cluster_genes(SE_genes,
                  list1,
                  DEC_genes)
 ```
+
 Arguments:
-SE_genes: The names of SVGs as a string.
-list1: list of related genes(an output from step 2 of fn_cSVG_par, see below)
+
+SE_genes: The names of SVGs as a string. 
+
+list1: list of related genes(an output from step 2 of fn_cSVG_par, see below) 
+
 DEC_genes: The names of significant genes from the output matrix of step 2 of fn_cSVG_par(see below).  
 
 
 ## Output
 
 The output of the function fn_cSVG_par for step 1 (when argument control=FALSE):
+
 A mx11 matrix where the rows are genes and each row contains p-values corresponding to 10 different kernel functions(5 Gaussian and 5 cosine kernels) and the combined p-value. The genes with significant adjusted combined p-value are selected as SVG. 
 
 The output of the function fn_cSVG_par for step 2 (when argument control=TRUE):
+
 Step 2 runs on the subset of SVGs found from step 1 result. If there are m1 SVGs, the outputs of this step are:
 1. A m1x11 matrix where p-values corresponding 10 kernel functions and the combined p-value are given for each of m1 SVGs.
 2. A list of length m1 containing information about the related genes for each m1 SVGs.
 
 The output of fn_cluster_genes function:
+
 The cluster IDs corresponding to all SVGs.
 
 

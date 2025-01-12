@@ -25,7 +25,15 @@ data_mat: normalized gene expression matrix with rows as genes and columns as sp
 
 loc_mat: matrix containing the spatial locations of the spots in data_mat. spatial locations are typically represented as two-dimensional coordinates, so loc_mat is typically a Nx2 matrix. 
 
-method_step1: method to select related genes. The default method is "MargcorTest" or marginal correlation test. The other available options are "SIS" or sure independence screening, "rrcs", "Enet" or Elastic net, "SIS+Enet".  See https://github.com/wwrechard/screening for more information about "SIS" or "rrcs" methods.
+method_step1: method to select related genes. The default method is "MargcorTest" or marginal correlation test. The other available options are "SIS" or sure independence screening, "rrcs" or Robust rank correlation based screening, "Enet" or Elastic net, "SIS+Enet".  
+
+thres_step1: threshold for any method specified in method_step1. For method_step1= "MargcorTest", this argument is not required. The default is "standard", which calculates standard threshold for other methods. Look at the "screening" Github page for more information.
+
+control = Specifies the intended use of the function. If control=FALSE, the function fn_cSVG_par performs step 1 of SPACE. If control=TRUE, it performs step 2 of SPACE. Please refer to the paper and look at the output section for more details about step 1 and step 2 results.
+
+nodes: no of nodes used in parallel computation.
+
+## Output
 
 
 

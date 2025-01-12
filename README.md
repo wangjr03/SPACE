@@ -8,7 +8,7 @@ Please find below a schematic diagram which shows the steps of SPACE for spatial
 
 ## Input data
 
-The main function fn_cSVG_par can be utilized as follow:
+1. The main function fn_cSVG_par can be utilized as follow:
 
 ``` r
 fn_cSVG_par(data_mat,
@@ -33,7 +33,7 @@ control = Specifies the intended use of the function. If control=FALSE, the func
 
 nodes: no of nodes used in parallel computation.
 
-The function fn_cluster_genes can be utilized as follow:
+2. The function fn_cluster_genes can be utilized as follow:
 
 ``` r
 fn_cluster_genes(SE_genes,
@@ -52,17 +52,17 @@ DEC_genes: The names of significant genes from the output matrix of step 2 of fn
 
 ## Output
 
-The output of the function fn_cSVG_par for step 1 (when argument control=FALSE):
+1. The output of the function fn_cSVG_par for step 1 (when argument control=FALSE):
 
-A mx11 matrix where the rows are genes and each row contains p-values corresponding to 10 different kernel functions(5 Gaussian and 5 cosine kernels) and the combined p-value. The genes with significant adjusted combined p-value are selected as SVG. 
+A mx11 matrix where the rows are genes and each row contains p-values corresponding to 10 different kernels (5 Cosine and 5 Gaussian kernels with varying parameter values) and the combined p-value. The genes with significant adjusted(after multiplicity correction) combined p-value are selected as SVG. 
 
 The output of the function fn_cSVG_par for step 2 (when argument control=TRUE):
 
 Step 2 runs on the subset of SVGs found from step 1 result. If there are m1 SVGs, the outputs of this step are:
-1. A m1x11 matrix where p-values corresponding 10 kernel functions and the combined p-value are given for each of m1 SVGs.
+1. A m1x11 matrix where p-values corresponding 10 different kernels (5 Cosine and 5 Gaussian kernels with varying parameter values) and the combined p-value are given for each of m1 SVGs.
 2. A list of length m1 containing information about the related genes for each m1 SVGs.
 
-The output of fn_cluster_genes function:
+2. The output of fn_cluster_genes function:
 
 The cluster IDs corresponding to all SVGs.
 

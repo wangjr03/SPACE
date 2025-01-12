@@ -66,7 +66,8 @@ The output of fn_cluster_genes function:
 
 The cluster IDs corresponding to all SVGs.
 
+## Example 
 
-See [here] for more details.
+The Simulation/simulated_datasets folder contains a simulated dataset. See [here] for more details. It demonstrates how the SPACE workflow works with step-by-step code, key functions, and helpful visualizations.
 
 [here]: https://github.com/wangjr03/SPACE/blob/main/Simulation/Simulation.md

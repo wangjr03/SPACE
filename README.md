@@ -79,10 +79,9 @@ These folders demonstrate different features of SPACE:
 1. Simulation: Demonstrates the effectiveness of the SVG clustering performance by SPACE.
 2. Simulation_domainDetection: Assesses whether the SVG clusters identified by SPACE improve domain detection accuracy.
 3. Data analysis: Showcases the effectiveness of the SPACE method using two publicly available datasets and a new dataset.
-            [Analysis of breast cancer data]
-   
-            [Analysis of Human DLPFC 10x Genomics Visium dataset]
-   
+
+            [Analysis of breast cancer data] 
+            [Analysis of Human DLPFC 10x Genomics Visium dataset] 
             [Analysis of HER2 breast tumor data]
 
    [Analysis of breast cancer data]: https://github.com/wangjr03/SPACE/tree/main/data%20analysis%20code/Breast%20Cancer%20data%20analysis
@@ -90,4 +89,4 @@ These folders demonstrate different features of SPACE:
    [Analysis of HER2 breast tumor data]: https://github.com/wangjr03/SPACE/tree/main/data%20analysis%20code/HER2%20data%20analysis
    
    
-5. Data: Provides information/ source of datasets analyzed.
+4. Data: Provides information/ source of datasets analyzed.

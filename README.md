@@ -71,3 +71,11 @@ The cluster IDs corresponding to all SVGs.
 The Simulation/simulated_datasets folder contains a simulated dataset. See [here] for more details. It demonstrates how the SPACE workflow works with step-by-step code, key functions, and helpful visualizations.
 
 [here]: https://github.com/wangjr03/SPACE/blob/main/Simulation/Simulation.md
+
+## Overview of Github Folders 
+
+These folders demonstrate different features of SPACE:
+
+1. Simulation: Demonstrates the effectiveness of the SVG clustering performance by SPACE.
+2. Simulation_domainDetection: Assesses whether the SVG clusters identified by SPACE improve domain detection accuracy.
+3. Data_analysis: Applies the SPACE method to two publicly available datasets

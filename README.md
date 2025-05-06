@@ -58,8 +58,10 @@ A mx11 matrix where the rows are genes and each row contains p-values correspond
 
 2. The output of the function fn_cSVG_par for step 2 (when argument control=TRUE):
 
-Step 2 runs on the subset of SVGs found from step 1 result. If there are m1 SVGs, the outputs of this step are:
-a) A m1x11 matrix where p-values corresponding 10 different kernels (5 Cosine and 5 Gaussian kernels with varying parameter values) and the combined p-value are given for each of m1 SVGs.
+Step 2 runs on the subset of SVGs found from step 1 result. If there are m1 SVGs, the outputs of this step are: 
+
+a) A m1x11 matrix where p-values corresponding 10 different kernels (5 Cosine and 5 Gaussian kernels with varying parameter values) and the combined p-value are given for each of m1 SVGs. 
+
 b) A list of length m1 containing information about the related genes for each m1 SVGs.
 
 3. The output of fn_cluster_genes function:
